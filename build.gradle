@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+    id "com.github.ben-manes.versions" version '0.28.0'
+}
+
+group 'org.athenian'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+}
+
+task myclass(type: Jar, dependsOn: shadowJar) {
+    archiveFileName = 'myclass.jar'
+    manifest {
+        attributes('Main-Class': 'MyClass')
+    }
+    from zipTree(shadowJar.archiveFile)
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        exceptionFormat "full"
+        showStandardStreams = true
+    }
+}
