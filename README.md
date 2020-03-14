@@ -1,30 +1,3 @@
-# Master APCS Assignment Template
+# Doubler Assignment 
 
-Use this master template to create APCS Assignment Templates.
-
-## CLI Commands
-
-Build project with:
-```
-./gradlew assemble
-```
-
-Clean project with:
-```
-./gradlew clean
-```
-
-Build and test project with:
-```
-./gradlew build
-```
-
-Build uberjar file with:
-```
-./gradlew myclass
-```
-
-Run uberjar file with:
-```
-java -jar build/libs/myclass.jar
-```
+Add code to [MyClass.doubleIt()](src/main/java/Doubler.java) to return a doubled value.

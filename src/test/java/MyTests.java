@@ -1,25 +1,18 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MyTests {
 
     @Test
-    public void testChineseGreeting() {
-        MyClass chinese = new MyClass("Ni Hao!");
+    public void testDoubler() {
+        Doubler doubler = new Doubler();
 
         // assert statements
-        assertEquals("Ni Hao!", chinese.getGreeting());
-        assertNotEquals("Hello!", chinese.getGreeting());
+        assertEquals(16, doubler.doubleIt(8));
+        assertEquals(24, doubler.doubleIt(12));
+        assertEquals(0, doubler.doubleIt(0));
+        assertEquals(-2, doubler.doubleIt(-1));
     }
 
-    @Test
-    public void testSpanishGreeting() {
-        MyClass spanish = new MyClass("Hola!");
-
-        // assert statements
-        assertEquals("Hola!", spanish.getGreeting());
-        assertNotEquals("Hello!", spanish.getGreeting());
-    }
 }
