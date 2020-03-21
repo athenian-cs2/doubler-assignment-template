@@ -4,6 +4,10 @@
 target
 build
 out
+.project
+.classpath
+.settings
+.factorypath
 
 # Compiled class file
 *.class
