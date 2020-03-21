@@ -8,8 +8,6 @@ out
 .classpath
 .settings
 .factorypath
-gradlew
-gradlew.bat
 
 # Compiled class file
 *.class
