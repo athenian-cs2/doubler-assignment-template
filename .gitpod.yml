@@ -1,4 +1,4 @@
-tasks:
-  - init: ./gradlew build
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
+#tasks:
+#  - init: ./gradlew build
+#  - init: echo 'init script'
+#    command: echo 'start script'
