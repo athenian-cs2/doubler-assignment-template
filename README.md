@@ -8,6 +8,7 @@ make run
 ```
 Or go to [MyMain](src/main/java/MyMain.java) and click on `Run` above the `main()` method.
 
+Remember to save your changes before running your code.
 
 ## Run your tests with:
 ```shell script
