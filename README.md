@@ -1,6 +1,6 @@
 # Doubler Assignment 
 
-Add code to [MyClass.doubleIt()](src/main/java/Doubler.java) to return a doubled value.
+Add code to [Doubler.doubleIt()](src/main/java/Doubler.java) to return a doubled value.
 
 ## Run your code with:
 ```shell script
